@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700; 1.100..700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700; 1.100.700&display=swap');
 :root{
-    --branco: white;
-    --cor-de-fundo: #02062B;
-    --fundo-senha: #28024F;
-    --fundo-texto: #240147;
-    --borda: #00F0FF; 
-    família de fontes: "Roboto Mono", monospace;
- font-optical-sizing: auto; font-weight: <peso>; font-style: normal;
+    --branco: #FFFFFF;
+    --cor-de-fundo: #2E0029;
+    --fundo-senha: #960E4F;
+    --fundo-texto: #680534; 
+    --borda: #FF002E;
+    --roboto: 'Roboto', sans-serif;
+    --roboto-mono:'Roboto Mono', monospace;
 }
 
-{
+
+*{
     font-weight: 400;
 }
 
@@ -17,43 +18,51 @@ body{
     color: var(--branco);
     background-color: var(--cor-de-fundo);
     font-family: var(--roboto);
+    
 }
 
 .titulo-principal{
+  
     font-family: var(--roboto-mono);
     font-size: 32px;
+
 }
 
 .titulo-secundario{
+
     font-size: 24px;
 }
 
-.conteudo-titulo{ 
+.conteudo-titulo{
+
     text-align: center;
     margin-top: 80px;
 }
 
 .conteudo-senha{
-    margin-top: 80px;
+    margin-top: 60px;
     background: var(--fundo-senha);
     padding: 24px;
     border-bottom: 6px solid var(--borda);
 }
 
-#campo-senha {
+#campo-senha{
+
     background-color: var(--fundo-senha);
     border: none;
     color: var(--branco);
     font-family: var(--roboto-mono);
-    font-size: 40px;
+    font-size: 24px;
 }
 
-#campo-senha:focus {
+#campo-senha:focus{
+
     outline: none;
 }
 
 .conteudo{
-    max-width: 1200px;
+
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -78,6 +87,7 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
 .parametro-senha{
     width: 50%;
     margin: 0 auto;
@@ -96,6 +106,7 @@ body{
     font-size: 24px;
     cursor: pointer;
 }
+
 .parametro-senha__texto{
     padding: 24px;
     border-top: 2px solid var(--borda);
@@ -119,19 +130,23 @@ label{
     height: 30px;
     width: 100%;
 }
+
 .forca{
     height: 30px;
     position: relative;
     bottom: 30px;
 }
+
 .fraca{
     width: 25%;
     background-color: #E71B32; 
 }
+
 .media{
     background-color: #FAF408;
     width: 50%;
 }
+
 .forte{
     background-color: #00FF85;
     width: 100%;
@@ -142,10 +157,8 @@ label{
     justify-content: space-between;
 }
 
-
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha{
         flex-direction: row;
     }
 }
-
